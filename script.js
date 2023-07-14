@@ -112,9 +112,9 @@ export function sortByLastName() {
         let next = b.split(",")[1];
 
         if(cur < next){
-            return -1
-        }else if(cur > next){
             return 1;
+        }else if(cur > next){
+            return -1;
         }else{
             return 0;
         }
