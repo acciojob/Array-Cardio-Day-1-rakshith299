@@ -116,7 +116,7 @@ export function sortByLastName() {
         }else if(cur > next){
             return 1;
         }else{
-            return 0;
+            return -1;
         }
     }
     people.sort(compare);
