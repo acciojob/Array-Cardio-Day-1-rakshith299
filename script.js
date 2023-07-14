@@ -108,13 +108,13 @@ export function sortbylived() {
 export function sortByLastName() {
 
 	const compare = (a,b) => {
-        let cur = a.split(",")[1];
-        let next = b.split(",")[1];
+        let cur = a.split(",")[0];
+        let next = b.split(",")[0];
 
         if(cur < next){
-            return 1;
-        }else if(cur > next){
             return -1;
+        }else if(cur > next){
+            return 1;
         }else{
             return 0;
         }
