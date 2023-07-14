@@ -89,9 +89,9 @@ export function sortbylived() {
         let diffB = b.passed - b.year;
 
         if(diffA > diffB){
-            return 1;
-        }else if(diffA < diffB){
             return -1;
+        }else if(diffA < diffB){
+            return 1;
         }else{
             return 0;
         }
